@@ -30,6 +30,7 @@ const URI = process.env.MongoDBURI;
 // Connect to MongoDB
 const connectDB = async () => {
     try {
+        // console.log(URI)
         await mongoose.connect(URI);
         console.log("✅ Connected to MongoDB");
     } catch (error) {
