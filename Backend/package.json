@@ -5,6 +5,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
+    "buid": "echo 'No build step required for backend'",
+    "dev": "node index.js",
     "start": "nodemon index.js"
   },
   "dependencies": {

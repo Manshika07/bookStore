@@ -11,7 +11,13 @@ import userRoute from "./route/user.route.js";
 const app = express();
 
 // Middlewares
-app.use(cors());
+app.use(cors(
+    {
+        origin: ["http://localhost:5173","https://book-store-p3sj.vercel.app/"],
+        methods: ["GET", "POST", "PUT", "DELETE"],
+        credentials: true
+    }
+));
 app.use(express.json());
 
 // Load environment variables
