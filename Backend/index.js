@@ -13,7 +13,7 @@ const app = express();
 // Middlewares
 app.use(cors(
     {
-        origin: ["http://localhost:5173","https://book-store-p3sj.vercel.app/"],
+        origin: ["http://localhost:5173","https://book-store-p3sj.vercel.app"],
         methods: ["GET", "POST", "PUT", "DELETE"],
         credentials: true
     }
